@@ -1,0 +1,251 @@
+a{
+    text-decoration: none;
+}
+.e-4{
+    background-color: rgba(0, 0, 0, 0.532)
+}
+.carousel-item img {
+    height: 760px;
+}
+.carousel-caption{
+    background-color: rgba(58, 64, 70, 0.325);
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 2%;
+}
+.mm{
+    position: relative;
+}
+.zz{
+    margin: 0 10px;
+}
+.aa{
+    height: 60px;
+}
+.clip{
+ clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+@media (max-width: 767px) {
+    .clip{
+        width: 100%;
+        clip-path: none;
+        height: 300px;
+        margin-top: 50px;
+    }   }
+.clip2{
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+@media (max-width: 767px) {
+    .clip2{
+        width: 100%;
+        clip-path: none;
+        height: 300px;
+        margin-top: 50px;
+    }}
+.form-check-input:checked {
+    background-color:rgb(58, 135, 163) !important;
+    border-color:rgb(64, 159, 187) !important;
+ }
+    .form-check-input {
+        background-color: white !important; 
+        border-color: gray !important; 
+      }
+      .form-check-input:focus {
+        box-shadow: rgb(56, 195, 195) !important; 
+      }
+.ww:hover{
+    font-size: 19px;
+}  
+.xx{
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    margin-right: 1% !important;
+    z-index: 1000;
+}  
+.sa{
+   margin-top: 45%;
+   margin-right: 20%;
+   font-size: 65px !important;
+    display: block !important;
+    color: rgb(20, 73, 102);
+}  
+.sa:hover{
+    color:rgba(84, 163, 206, 0.682);
+}
+.bg-image {
+    background-image: url(../images/uouo\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 167, 182, 0.115);
+}
+.content {
+    position: absolute;
+            top: 100%; 
+            left: 0; 
+            height: 120px;  
+            z-index: 1;
+            text-transform: uppercase;
+}
+.cop{
+    margin-top: 8% !important;
+}  
+.con{
+    position: relative;
+}
+.con::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom : 0;
+    right: 0;
+    background-color:rgba(42, 40, 40, 0.612);
+    opacity: 1;
+}
+.con:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4 ;
+    transition: 1s ;
+}
+.con:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0 ;
+    top : 0;
+    left: 0;
+    background-color:rgba(42, 40, 40, 0.619);
+    opacity: 1; 
+ }
+ .con:hover::before {
+     width: 100%;
+     height: 100%;
+     opacity: 0.4 ;
+     transition: 1s ;
+ }
+textarea{
+    height: 150px;
+    background-color: white
+}
+.bg-image2{
+    background-image: url(../images/plk.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 480px;
+    position: relative;
+}
+.bg-img{
+    background-image: url(../images/business\ woman.jpeg);
+    background-size:cover ;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform: scale(1,1);
+    transition: 0.2s;
+}
+.bg-img:hover , .bg-img2:hover , .bg-img3:hover{
+    transform: scale(0.9 , 0.9);
+}
+.cir-img{
+    background-image: url(../images/business\ woman.jpeg);
+    background-size:cover ;
+    height: 140px;
+    width: 100px;
+    margin-top: 40%;
+}
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.over:hover{
+    background-color: rgba(0, 0, 0, 0.663);
+}
+.bg-img2{
+    background-image: url(../images/10\ Things\ classy\ women\ never\ do.jpeg);
+    background-size:cover ;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform: scale(1,1);
+    transition: 0.2s;
+
+}
+.cir-img2{
+    background-image: url(../images/10\ Things\ classy\ women\ never\ do.jpeg);
+    background-size:cover ;
+    height: 140px;
+    width: 100px;
+    margin-top: 40%;
+}
+.bg-img3{
+    background-image: url(../images/Businesswoman\ posing\ in\ the\ city\ with\ arms\ crossed\ _\ Premium\ AI-generated\ image.jpeg);
+    background-size:cover ;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform: scale(1,1);
+    transition: 0.2s;
+}
+.cir-img3{
+    background-image: url(../images/Businesswoman\ posing\ in\ the\ city\ with\ arms\ crossed\ _\ Premium\ AI-generated\ image.jpeg);
+    background-size:cover ;
+    height: 140px;
+    width: 100px;
+    margin-top: 40%;
+}
+.cut{
+    width: 150px;
+    height: 5px;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+.cuto:hover .cut{
+    width: 190px;
+}
+.img-fluid{
+    transform: scale(1,1);
+    transition: 0.9s;
+}
+.img-fluid:hover{
+    transform: scale(1.1,1);
+}
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.footer-hr{
+    width: 100% !important;
+    height: 2px !important;
+
+}
+.a-footer:hover{
+    color: rgb(24, 99, 146) !important;
+}
+.bg-light-hr{
+    width: 100% !important;
+    height: 2px !important;
+} 
+.div1 , .div2 , .div3{
+    text-align: center;
+}
+.final{
+    height: 100px !important;
+    width: 100%  !important;
+}

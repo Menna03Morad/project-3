@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css">
+    
+</head>
+<body class="bg-secondary">
+ <!-- /////////////////////////////////////////////////////// -->
+<nav class="navbar navbar-expand-lg navbar-light e-4 fixed-top">
+        <div class="container-fluid">
+            <img src="images/Screenshot (74999).png" alt="img" height="70" width="70" class="rounded-circle">
+          <a class="navbar-brand text-info h1 mx-4" href="#">EGYPT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light h6" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light h6" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle col-lg-11 col-sm-1 col-2 text-light h6 btn btn-outline-info ww " href="#" type="button" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Cairo</a></li>
+                  <li><a class="dropdown-item" href="#">Alexandria</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">luxor</a></li>
+                  <li><a class="dropdown-item" href="#">Aswan</a></li>
+                  <li><a class="dropdown-item" href="#">Sharm El Sheikh</a></li>
+                  <li><a class="dropdown-item" href="#">El Gala</a></li>
+                  <li><a class="dropdown-item" href="#">More..</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light h6" href="#" tabindex="-1" aria-disabled="true">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control  me-3" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn bg-info text-dark  zz" type="submit">Search</button>
+               <!-- Button to Open the Modal -->
+               <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+</nav>
+<!-- The Modal -->
+<div class="modal fade col-12" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-dark text-light">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="/action_page.php">
+          <div class="form-group ">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+          </div>
+          <div class="form-group form-check ">
+            <label class="form-check-label ">
+              <div class="form-check form-switch">
+                <input class="form-check-input me-0" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label  text-dark" for="flexSwitchCheckChecked">Remember Me</label>
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer ">
+        <button type="submit" class="btn btn-info me-auto">Login</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div id="carouselExampleCaptions" class="carousel slide d-flex justify-content-end align-items-center mx-1 mm">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/aaaaa.jpg" class="d-block w-100 d-block" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h2>Luxor Temple</h2>
+           <p>Welcome to a journey through history, where authenticity blends with beauty in the most prominent archaeological and tourist sites.</p>
+        <button class="btn btn-info ">Visit Us</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/rrrrrr.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h2>Hatshepthot Temple </h2>
+        <p>Welcome to a journey through history, where authenticity blends with beauty in the most prominent archaeological and tourist sites.</p>                <button class="btn btn-info ">Visit Us</button>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/sssss.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h2>Abu Simbel Temple </h2>
+        <p>Welcome to a journey through history, where authenticity blends with beauty in the most prominent archaeological and tourist sites.</p>
+        <button class="btn btn-info ">Visit Us</button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/pppppp.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h2>Karnak Temple</h2>
+        <p>Welcome to a journey through history, where authenticity blends with beauty in the most prominent archaeological and tourist sites.</p>
+        <button class="btn btn-info ">Visit Us</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <i class="fa-solid fa-chevron-left fs-2"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <i class="fa-solid fa-chevron-right fs-2"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="container me-auto position-fixed xx ">
+    <i class="sa fa-brands fa-square-facebook"></i>
+    <i class="sa fa-brands fa-square-whatsapp"></i>
+    <i class="sa fa-brands fa-square-twitter"></i>
+    <i class="sa fa-brands fa-linkedin"></i>
+    <i class="sa fa-brands fa-instagram"></i>
+  </div>
+</div>
+<!-- /////////////////////////// -->
+
+<div class="card w-100 mb-3 bg-dark ms-1 rounded-bottom-1">
+  <div class="card-body">
+    <h2 class="card-title text-info">Welcome</h2>
+    <p class="card-text text-light">We are very happy that you are visiting our website! We strive to provide a unique and enjoyable experience for all of our visitors. Whether you are looking for information, inspiration, or services, we are here to fulfill your needs.</p>
+    <a href="#" class="btn btn-info px-5 py-2">Learn More</a>
+  </div>
+</div>
+<hr>
+<div class="cotainer bg-info d-flex justify-content-center align-items-center rounded-3 mx-1">
+  <h2 class="text-secondary fs-1 p-5">Popular destinations in Egypt</h2>
+</div>
+<!-- /////////////////////////////// -->
+<div class="accordion accordion-flush mx-1 mt-3" id="accordionFlushExample">
+  <div class="accordion-item bg-dark">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-3 text-info border shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="box-shadow: 0 4px 10px rgba(72, 72, 76, 0.5);">
+        Cairo city
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-light bg-secondary">The history of Egyptian cities reflects an ancient civilization that spans thousands of years, combining a unique cultural and architectural heritage that has been shaped through the ages, from ancient Pharaonic times to modern Islamic periods</div>
+    </div>
+  </div>
+  <div class="accordion-item bg-dark ">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-3  text-info shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo " style="box-shadow: 0 4px 10px rgba(74, 74, 78, 0.5);">
+        Alexandria city
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body  text-light bg-secondary">The history of Egyptian cities reflects an ancient civilization that spans thousands of years, combining a unique cultural and architectural heritage that has been shaped through the ages, from ancient Pharaonic times to modern Islamic periods</div>
+    </div>
+  </div>
+  <div class="accordion-item bg-dark">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-3  text-info shadow-lg " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="box-shadow: 0 4px 10px rgba(38, 38, 42, 0.5);">
+        Luxor city
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body  text-light bg-secondary">The history of Egyptian cities reflects an ancient civilization that spans thousands of years, combining a unique cultural and architectural heritage that has been shaped through the ages, from ancient Pharaonic times to modern Islamic periods</div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- /////////////////////// -->
+<div class="cotainer bg-info d-flex justify-content-center align-items-center rounded-3 mx-1">
+  <h2 class="text-secondary fs-1 p-5">Translate from Arabic to English</h2>
+</div>
+<p class="fs-2 text-light mx-3">write and translate <a class="text-info">press here</a></p>
+<button class="btn btn-info mx-3 px-3 border-3 fs-5 text-light"  data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" title="copy text"  data-bs-target="#staticBackdrop">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">This Site Says:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> تم نسخ النص ...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<textarea class="mx-3 mt-3 rounded container  fs-4" placeholder=" translate:"></textarea>
+<div class="cotainer  bg-info d-flex justify-content-center align-items-center rounded-3 mx-1">
+  <h2 class="text-secondary fs-1 p-5">Translate from Arabic to French</h2>
+</div>
+<p class="fs-2 text-light mx-3">write and translate <a class="text-info">press here</a></p>
+<button class="btn btn-info mx-3 px-3 border-3 fs-5 text-light"  data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" title="copy text"  data-bs-target="#staticBackdrop">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">This Site Says:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> تم نسخ النص ...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<textarea class="mx-3 mt-3 rounded container tx  fs-4" placeholder=" translate:"></textarea>
+<div class="cotainer  bg-info d-flex justify-content-center align-items-center rounded-3 mx-1">
+  <h2 class="text-secondary fs-1 p-5">Translate from Arabic to Germany</h2>
+</div>
+<p class="fs-2 text-light mx-3">write and translate <a class="text-info">press here</a></p>
+<button class="btn btn-info mx-3 px-3 border-3 fs-5 text-light"  data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" title="copy text"  data-bs-target="#staticBackdrop">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">This Site Says:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> تم نسخ النص ...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<textarea class="mx-3 mt-3 rounded container tx  fs-4" placeholder=" translate:"></textarea>
+<hr>
+<!-- ////////////////////////////////////// -->
+<div class="bg-image">
+  <div class="overlay"></div>
+  <div class=" bg-light mx-1 d-flex justify-content-center align-items-center rounded-3 w-100 content ">
+      <h2 class="text-info fs-1 p-5 ">Popular tourist areas in Egypt</h2>
+  </div>
+</div>
+<!-- //////////////// -->
+<div class="container-fluid cop mt-5">
+  <div class="row g-4 mt-5">
+    <!-- first card-->
+    <div class="col-lg-4 col-md-6 col-12 ">
+      <div class="mb-4 p-4 mt-5 ms-4">
+          <div class="card con">
+              <img src="images/kkk.jpeg" height="430" class="card-img-top" alt="Giza Pyramids" style="object-fit: cover; width: 95%; margin: auto;">
+              <div class="card-body d-flex align-items-center">
+                  <h5 class="card-title mb-0">Giza Pyramids</h5>
+                  <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+              </div>
+              <p class="card-text  ms-3  mb-2 py-2">The Pyramids of Giza are an eternal engineering marvel.</p>
+          </div>
+      </div>
+  </div>
+    
+   <!-- card 2 -->
+<div class="col-lg-4 col-md-6 col-12 ">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/Luxor Temple.jpeg" height="430" class="card-img-top" alt="Luxor Temple" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Luxor Temple</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">The Temple of Luxor is a symbol of the Pharaohs' greatness.</p>
+      </div>
+  </div>
+</div>
+
+<!-- card 3 -->
+<div class="col-lg-4 col-md-6 col-12 ">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/Radamis I Nile cruise ship.jpeg" height="430" class="card-img-top" alt="Karnak Temple" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Karnak Temple</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">The Karnak Temple is the largest religious complex in the world.</p>
+      </div>
+  </div>
+</div>
+
+  </div>
+  
+  <div class="row g-4">
+    <!-- card 4 -->
+<div class="col-lg-4 col-md-6 col-12 ">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/download.jpeg" height="430" class="card-img-top" alt="Hatshepsut Temple" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Temple of Hatshepsut</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">The Hatshepsut Temple in Luxor is dedicated to Queen Hatshepsut.</p>
+      </div>
+  </div>
+</div>
+
+<!-- card 5 -->
+<div class="col-lg-4 col-md-6 col-12 ">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/ABU SIMBEL (1).jpeg" height="430" class="card-img-top" alt="Abu Simbel" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Abu Simbel Temple</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">Abu Simbel is a temple built by Ramses II in southern Egypt.</p>
+      </div>
+  </div>
+</div>
+
+<!-- card 6 -->
+<div class="col-lg-4 col-md-6 col-12 ">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/fele.jpeg" height="430" class="card-img-top" alt="Philae Temple" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Philae Temple</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">Philae Temple is dedicated to the goddess Isis in Aswan.</p>
+      </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="row g-4">
+   <!-- card 7 -->
+<div class="col-lg-4 col-md-6 col-12 m-auto">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/doownload (1).jpeg" height="430" class="card-img-top" alt="Queen Nefertari's Tomb" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Queen Nefertari's Tomb</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">The tomb of Queen Nefertari is a masterpiece of ancient Egyptian art.</p>
+      </div>
+  </div>
+</div>
+
+<!-- card 8 -->
+<div class="col-lg-4 col-md-6 col-12 m-auto">
+  <div class="mb-4 p-4 mt-5 ms-4">
+      <div class="card con">
+          <img src="images/doownload (2).jpeg" height="430" class="card-img-top" alt="Kom Ombo Temple" style="object-fit: cover; width: 95%; margin: auto;">
+          <div class="card-body d-flex align-items-center">
+              <h5 class="card-title mb-0">Kom Ombo Temple</h5>
+              <a href="#" class="btn btn-info fs-6 text-light ms-auto">Know More</a>
+          </div>
+          <p class="card-text  ms-3  mb-2 py-2">Kom Ombo is a unique double temple in Aswan, Egypt.</p>
+      </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+<div class="bg-image2">
+</div>
+<hr>
+ <!-- //////////////////////////// -->
+ <div class="cotainer bg-light d-flex justify-content-center align-items-center rounded-3 mx-1">
+  <h2 class="text-info fs-1 p-5">THANKS FOR</h2>
+</div>
+  <!-- ///////////////////// -->
+<div class="container row m-auto mt-5">
+      <div class="bg-img   mb-3 d-flex justify-content-center align-items-center rounded-3 mt-lg-0 col-md-4 col-12  mx-auto"><div class="over  rounded-3 "> 
+           <h4 class="text-light mx-5 mt-4">All thanks and appreciation</h4>
+           <i class="fa-regular fa-clock text-light ms-5"></i>
+           <span class="text-light ">october 15,2024</span>
+           <!-- /////////////////////// -->
+            <div class="cir-img border rounded-circle mx-4"></div>
+            <p class="text-light ms-4">Eng/Lena Harrison <br> Full-stack software developer</p>
+           
+
+      </div></div>
+      <div class="bg-img2 rounded-3 mt-lg-0 mt-sm-5 col-md-4 col-12 mx-auto  mb-3 d-flex justify-content-center align-items-center "> <div class="over  rounded-3 ">
+          <h4 class="text-light mx-5 mt-4">All thanks and appreciation</h4>
+          <i class="fa-regular fa-clock text-light ms-5"></i>
+          <span class="text-light ">october 15,2024</span>
+          <!-- ///////////////////// -->
+          <div class="cir-img2 border rounded-circle mx-4"></div>
+          <p class="text-light ms-4">Eng/Isabelle Morgan  <br> Full-stack software developer</p>
+          
+
+
+       </div></div>
+       <div class="bg-img3 rounded-3 mt-lg-0 mt-sm-5 col-md-4 col-12 mx-auto  mb-3 d-flex justify-content-center align-items-center"><div class="over  rounded-3 ">
+          <h4 class="text-light mx-5 mt-4">All thanks and appreciation</h4>
+          <i class="fa-regular fa-clock text-light ms-5"></i>
+          <span class="text-light ">october 15,2024</span>
+          <!-- //////////////////////////// -->
+
+          <div class="cir-img3 border rounded-circle mx-4"></div>
+          <p class="text-light ms-4">Eng/Ava Mitchell  <br> Full-stack software developer</p>
+          
+
+
+        </div></div>
+   </div>
+   <br>
+   <hr>
+   <!-- ////////////////////////// -->
+   <div class="d-flex justify-content-center "> <h2 class="text-light mt-3 mx-5">EGYPT NEWS</h2></div>
+   <!-- /////////////////////////////////// -->
+
+
+   <div class="card mb-3 container bg-dark rounded-5 shadow-lg" style=" box-shadow: 0 4px 10px rgba(22, 22, 22, 0.5);">
+    <div class="row g-0">
+    <!---->
+      <div class="order-md-1 order-sm-2 order-2 col-md-8 cuto p-0 bg-dark">
+        <div class="card-body">
+          <h2 class="card-title mt-5 text-info">King Tutankhamun</h2>
+          <i class="fa-solid fa-calendar-days text-light"></i>
+          <span class="text-light">Fri, Nov 8th 2024</span>
+          <div class="cut bg-info mt-3"></div>
+          <br>
+          <p class="card-text text-light">King Tutankhamun is one of the most famous pharaohs in the history of ancient Egypt, although he came to the throne at a very young age, around nine years old when he became king of Egypt in the late 18th dynasty. Despite his short reign, which only lasted about 10 years, his name has been heavily associated with the mysteries of pharaonic history due to the discovery of his tomb in the Valley of the Kings in 1922. One of the most significant achievements of Tutankhamun was his role in restoring stability to Egypt after a period of religious and political turmoil. His father, Akhenaten, had introduced the worship of the sun god Aten, which led to a dramatic shift in Egyptian religious practices. After Akhenaten's death, Tutankhamun reinstated the traditional worship of the god Amun, helping to unify and stabilize the kingdom. Overall, although Tutankhamun's reign was brief, his tomb's discovery and the treasures within have made him one of the most recognized figures in ancient Egyptian history, highlighting the cultural and artistic achievements of the time.</p>
+        <div class="mt-5">
+          <button class="btn btn-info text-dark "><i class="fa-solid fa-file "></i> Podcast</button> 
+         <button class="btn btn-info text-dark"> <i class="fa-solid fa-clock "></i> 55Min</button>  
+         <button class="btn btn-info text-dark"> <i class="fa-solid fa-play "></i>Play Episode</button>
+        </div>
+        </div>
+      </div>
+
+    <!-- -->
+      <div class=" order-md-1 order-sm-1 order-1  col-12 col-md-4 d-flex justify-content-end">
+        <img src="images/A close up view of the Viscera Coffin of Tutankhamun is on display___.jpeg" class="img-fluid rounded-end clip" alt="...">
+      </div>
+    </div>
+</div>
+    <!-- ////////////////////// -->
+
+    <div class="card mb-3 container bg-dark rounded-5 shadow-lg" >
+      <div class="row g-0">
+        
+        <!-- -->
+        <div class="col-12 col-md-4 d-flex justify-content-start">
+          <img src="images/Information About Queen Hatshepsut _ Queen Hatshepsut Death.jpeg" class="img-fluid rounded-end clip2 " alt="...">
+        </div>
+    
+      <!--  -->
+        <div class="col-12 col-md-8 cuto p-0 bg-dark">
+          <div class="card-body">
+            <h2 class="card-title mt-5 text-info">Queen Hatshepthot</h2>
+            <i class="fa-solid fa-calendar-days text-light"></i>
+            <span class="text-light">Fri, Nov 8th 2024</span>
+            <div class="cut bg-secondary mt-3"></div>
+            <br>
+            <p class="card-text text-light">
+              Queen Hatshepsut (c. 1507 – 1458 BCE) was one of the most famous queens in ancient Egyptian history and the first woman to rule as Pharaoh in her own right. She reigned for over 20 years, during which time she brought stability and prosperity to Egypt. Hatshepsut is considered one of Egypt's greatest rulers, showing remarkable leadership in both domestic and foreign affairs. She expanded trade, particularly with the land of Punt (believed to be located on the coasts of modern-day Somalia or Ethiopia), and oversaw monumental architectural projects, such as the famous mortuary temple at Deir el-Bahari in Thebes. Hatshepsut also promoted trade, particularly with the land of Punt (modern-day Somalia or Eritrea), bringing back vast riches, including incense, exotic animals, and trees, which helped strengthen Egypt’s economy. Her reign was largely peaceful, and she focused on economic stability, infrastructure, and the arts.            </p>
+            
+            <!-- -->
+            <div class="mt-5 d-flex gap-2">
+              <button class="btn btn-secondary text-light"><i class="fa-solid fa-file text-light"></i> Podcast</button> 
+              <button class="btn btn-secondary text-light"><i class="fa-solid fa-clock text-light"></i> 55Min</button>  
+              <button class="btn btn-secondary text-light"><i class="fa-solid fa-play text-light"></i> Play Episode</button>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+     <!-- //////////////////// -->
+
+
+     <div class="card mb-3 container bg-dark rounded-5 shadow-lg" >
+      <div class="row g-0">
+      <!-- -->
+        <div class="order-md-1 order-sm-2 order-2 col-md-8 cuto p-0 bg-dark">
+          <div class="card-body">
+            <h2 class="card-title mt-5 text-info"> King Ramses III</h2>
+            <i class="fa-solid fa-calendar-days text-light"></i>
+            <span class="text-light">Fri, Nov 8th 2024</span>
+            <div class="cut bg-info mt-3"></div>
+            <br>
+            <p class="card-text text-light">
+              King Ramses III (c. 1186 – 1155 BCE) was one of the last great pharaohs of ancient Egypt, reigning for 31 years during the 20th Dynasty. He is best known for defending Egypt against invasions by the Sea Peoples, securing the borders and preserving Egyptian power. Ramses III also focused on architectural projects, notably the Medinet Habu temple, and promoted trade and internal stability. Despite these successes, his reign ended in turmoil, marked by a conspiracy to assassinate him, which suggests internal instability in his later years. Nevertheless, Ramses III remains a key figure in Egypt’s late New Kingdom period.In addition to his military accomplishments, Ramses III worked to maintain Egypt’s internal stability. He made significant contributions to architecture, including expanding temples and monuments, and promoting religious practices. His mortuary temple at Medinet Habu is one of the most significant and best-preserved temples of the New Kingdom, containing detailed reliefs and inscriptions that provide insight into his reign and the challenges he faced.            </p>
+          <div class="mt-5">
+            <button class="btn btn-info text-dark "><i class="fa-solid fa-file" ></i> Podcast</button> 
+           <button class="btn btn-info text-dark"> <i class="fa-solid fa-clock"></i> 55Min</button>  
+           <button class="btn btn-info text-dark"> <i class="fa-solid fa-play" ></i>Play Episode</button>
+          </div>
+          </div>
+        </div>
+  
+        <!-- -->
+        <div class=" order-md-1 order-sm-1 order-1  col-12 col-md-4 d-flex justify-content-end">
+          <img src="images/Ramses III.jpeg" class="img-fluid rounded-end clip" alt="...">
+        </div>
+      </div>
+  </div>
+      <!-- ///////////////////////// -->
+      <div class="card mb-3 container bg-dark rounded-5 shadow-lg" >
+        <div class="row g-0">
+          
+          <!--  -->
+          <div class="col-12 col-md-4 d-flex justify-content-start">
+            <img src="images/Nefertiti (1).jpeg" class="img-fluid rounded-end clip2" alt="...">
+          </div>
+      
+          <!-- -->
+          <div class="col-12 col-md-8 cuto p-0 bg-dark">
+            <div class="card-body">
+              <h2 class="card-title mt-5 text-info">Queen Nefertiti</h2>
+              <i class="fa-solid fa-calendar-days text-light"></i>
+              <span class="text-light">Fri, Nov 8th 2024</span>
+              <div class="cut bg-secondary mt-3"></div>
+              <br>
+              <p class="card-text text-light">
+                Queen Nefertiti (c. 1370 – 1330 BCE) was one of the most famous and powerful queens of ancient Egypt, known for her beauty and her influential role during the reign of her husband, Pharaoh Akhenaten. Nefertiti and Akhenaten are particularly remembered for their religious revolution, as they introduced the worship of Aten, the sun disk, over traditional Egyptian gods. Nefertiti served as a co-regent with Akhenaten and was depicted in many sculptures, most notably the famous bust now housed in Berlin's Altes Museum. Her exact fate remains a mystery—some scholars believe she may have ruled as Pharaoh after Akhenaten's death, although there is no conclusive evidence. Nefertiti’s legacy as a powerful and iconic queen remains one of the most intriguing in Egyptian history.                  </p>
+              
+              <!-- -->
+              <div class="mt-5 d-flex gap-2">
+                <button class="btn btn-secondary text-light"><i class="fa-solid fa-file text-light"></i> Podcast</button> 
+                <button class="btn btn-secondary text-light"><i class="fa-solid fa-clock text-light"></i> 55Min</button>  
+                <button class="btn btn-secondary text-light"><i class="fa-solid fa-play text-light"></i> Play Episode</button>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+       <!-- /////////////////////////// -->
+       <div class="d-flex justify-content-center "> <h2 class="text-light mt-3 mx-5">JOIN US</h2></div>
+       <br>
+        <!-- ///////////////////////////// -->
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            
+            <!-- 1 div-->
+            <div class="col-12 col-md-3 mb-3 d-flex justify-content-center align-items-center" >
+              <div class="bg-dark p-3 text-center rounded-3 shadow-lg" style="width: 300px; height: 200px;">
+                <h4 class="text-info">Subscribe now</h4>
+                <img src="images/twit.jpeg" alt="...." height="100" width="100">
+                <h4 class="text-info">Go to link</h4>
+              </div>
+            </div>
+        
+            <!-- 2 div -->
+            <div class="col-12 col-md-3 mb-3 d-flex justify-content-center align-items-center" >
+              <div class="bg-dark p-3 text-center  rounded-3 shadow-lg"  style="width: 300px; height:200px;">
+                <h4 class="text-info">Follow</h4>
+                <img src="images/WhatsApp .jpeg" alt="...." height="100" width="100">
+                <h4 class="text-info">Go to link</h4>
+              </div>
+            </div>
+        
+            <!-- 3 div -->
+            <div class="col-12 col-md-3 mb-3 d-flex justify-content-center align-items-center" >
+              <div class="bg-dark p-3 text-center  rounded-3 shadow-lg"  style="width: 300px; height:200px;">
+                <h4 class="text-info">Like the page</h4>
+                <img src="images/linkdin.jpeg" alt="...." height="100" width="100">
+                <h4 class="text-info">Go to link</h4>
+              </div>
+            </div>
+        
+            <!-- 4 div -->
+            <div class="col-12 col-md-3 mb-3 d-flex justify-content-center align-items-center" >
+              <div class="bg-dark p-3 text-center  rounded-3 shadow-lg"  style="width: 300px; height: 200px;">
+                <h4 class="text-info">Watch videos</h4>
+                <img src="images/insta.jpeg" alt="...." height="100" width="100">
+                <h4 class="text-info">Go to link</h4>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+         <!-- ////////////////////////////// -->
+          <div class="container-fluid bg-dark row  d-flex justify-content-between ">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- div1 -->
+                <div class="div1 mb-3 col-md-4 col-12">
+                  <hr class="footer-hr bg-light">
+                  <img src="images/Screenshot (74999).png" height="70" width="70" class=" rounded-circle" alt="....">
+                  <span class="text-light ms-2 fs-5">Good Company</span>
+                  <hr class="footer-hr bg-light">
+                  <p class="text-light">Tel : 000-000-000</p>
+                  <p class="text-light">Address : EGYPT</p>
+                  <p class="text-light">Fax : 000-000-000</p>
+                </div><!-- div1 -->
+            
+                <!-- div2 -->
+                <div class="div2 mb-3 col-md-4 col-12">
+                  <hr class="footer-hr bg-light">
+                  <img src="images/Screenshot (74999).png" height="70" width="70" class="rounded-circle" alt="....">
+                  <span class="text-light ms-2 fs-5">Important Links</span>
+                  <hr class="footer-hr bg-light">
+                  <p><a class="text-info a-footer" href="#">Visit Us</a></p>
+                  <p><a class="text-info a-footer" href="#">Take a look</a></p>
+                  <p><a class="text-info a-footer" href="#">Your health is more important</a></p>
+                </div><!-- div2 -->
+            
+                <!-- div3 -->
+                <div class="div3 mb-3 col-md-4 col-12">
+                  <hr class="footer-hr bg-light">
+                  <img src="images/Screenshot (74999).png" height="70" width="70" class="rounded-circle" alt="....">
+                  <span class="text-light ms-2 fs-5">Vision</span>
+                  <hr class="footer-hr bg-light">
+                  <p class="text-light">Services for all</p>
+                  <p class="text-light">Provides the best service</p>
+                  <p class="text-light">You will be better than before</p>
+                </div><!-- div3 -->
+              </div><!-- row -->
+            </div><!-- container-fluid -->
+            <!-- //////////////////////// -->
+            <hr class="bg-light-hr bg-light">
+             <div class="container d-flex justify-content-center">
+              <h4 class="text-info mt-3 ">COPYRIGHT&copy;2024FULL-STACK DEVELOPER.GOOD COMPANY.ALL RIGHT</h4>
+             </div>
+             
+             <hr class="bg-light-hr bg-light  mt-3">
+             <!-- /////////////////////// -->
+              <div class="container-fluid  final  h-100"></div>
+       </div>
+          <!-- ////////////////////////////// -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
